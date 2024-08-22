@@ -17,7 +17,6 @@ public class Program {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Connection conn = null;
 		PreparedStatement st = null;
-		
 		try {
 			conn = DB.getConnection();
 			
@@ -50,7 +49,6 @@ public class Program {
 			System.out.println("No rown affected!");
 		}
 		
-		
 		}
 		catch(SQLException e) {
 			e.printStackTrace();
@@ -63,9 +61,6 @@ public class Program {
 			DB.closeConnection();
 		}
 		
-		
-		
-
 	}
 
 }
